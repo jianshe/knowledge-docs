@@ -1,0 +1,41 @@
+{
+  "hash": "a4ca2483",
+  "browserHash": "fe935d06",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.2.41/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "bda8b235",
+      "needsInterop": false
+    },
+    "ant-design-vue": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+ant-design-vue@3.2.15_vue@3.2.41/node_modules/ant-design-vue/es/index.js",
+      "file": "ant-design-vue.js",
+      "fileHash": "7599240c",
+      "needsInterop": false
+    },
+    "vue-audio": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue-audio@0.0.12/node_modules/vue-audio/index.js",
+      "file": "vue-audio.js",
+      "fileHash": "ccc67f7f",
+      "needsInterop": false
+    },
+    "@ant-design/icons-vue": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+@ant-design+icons-vue@6.1.0_vue@3.2.41/node_modules/@ant-design/icons-vue/es/index.js",
+      "file": "@ant-design_icons-vue.js",
+      "fileHash": "362d8ba4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-36YV4ZGM": {
+      "file": "chunk-36YV4ZGM.js"
+    },
+    "chunk-DGQ6HY3O": {
+      "file": "chunk-DGQ6HY3O.js"
+    },
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
+    }
+  }
+}
