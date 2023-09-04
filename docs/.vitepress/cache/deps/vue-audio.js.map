@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/registry.npmmirror.com+vue-audio@0.0.12/node_modules/vue-audio/index.js"],
-  "sourcesContent": ["import './src/style.css'\nimport VueAudio from './src/VueAudio.vue'\n\nexport default VueAudio\nexport { VueAudio }\n"],
-  "mappings": ";;;AAAA,OAAO;AACP,OAAO,cAAc;AAErB,IAAO,oBAAQ;",
-  "names": []
-}
