@@ -8,7 +8,6 @@ import JpWord from './JpWord.vue'
 import JpWordList from './JpWordList.vue'
 import { Card,Avatar } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
-import VueAudio from 'vue-audio';
 // import 'ant-design-vue/es/card/style/css'
 // import 'ant-design-vue/es/avatar/style/css'
 
@@ -27,7 +26,6 @@ export default {
     app.component('Word',Word)
     app.component('WordList',WordList)
     app.component('Member',Member)
-    app.component('VueAudio',VueAudio)
     app.use(Card)
     app.use(Avatar)
     // app.component('Sound',Sound)
