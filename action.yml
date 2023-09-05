@@ -6,4 +6,4 @@ branding:
   color: 'blue'
 runs:
   using: 'node12'
-  main: 'docs/.vitepress/dist/index.html'
+  main: 'dist/index.js'
