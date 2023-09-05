@@ -54,6 +54,7 @@ export default withMermaid(
   defineConfigWithTheme<ThemeConfig>({
     title: "遇你前端进阶指南",
     description: "遇你前端进阶指南|Vue3|React|Vite|Cli|项目实战",
+    lang: "zh-CN",
     head: [
       [
         "link",
