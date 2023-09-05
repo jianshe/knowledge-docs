@@ -4,6 +4,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import algolia from './algolia'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -98,6 +99,7 @@ export default withMermaid(
           // md.use(taskLists)
         },
       },
+      algolia,
       sidebar: {
         "/japanese": [
           {

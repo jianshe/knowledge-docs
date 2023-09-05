@@ -6,11 +6,10 @@ import Word from './Word.vue'
 import WordList from './WordList.vue'
 import JpWord from './JpWord.vue'
 import JpWordList from './JpWordList.vue'
-import { Card,Avatar } from 'ant-design-vue';
+import { Card, Avatar } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 // import 'ant-design-vue/es/card/style/css'
 // import 'ant-design-vue/es/avatar/style/css'
-
 import Member from './Member.vue'
 // import Sound from './Sound.vue'
 import './theme.css'
@@ -18,14 +17,14 @@ import './test'
 export default {
   ...DefaultTheme,
   NotFound,
-  Layout:MyLayout,
+  Layout: MyLayout,
   enhanceApp({ app, router, siteData }) {
-    app.component('BFrame',BFrame)
-    app.component('JpWord',JpWord)
-    app.component('JpWordList',JpWordList)
-    app.component('Word',Word)
-    app.component('WordList',WordList)
-    app.component('Member',Member)
+    app.component('BFrame', BFrame)
+    app.component('JpWord', JpWord)
+    app.component('JpWordList', JpWordList)
+    app.component('Word', Word)
+    app.component('WordList', WordList)
+    app.component('Member', Member)
     app.use(Card)
     app.use(Avatar)
     // app.component('Sound',Sound)
@@ -38,7 +37,7 @@ export default {
     //   s.parentNode.insertBefore(hm, s);
     // }
 
-  //   DefaultTheme.enhanceApp(ctx)
-  //   // ctx.app.component('VueClickAwayExample', VueClickAwayExample)
+    //   DefaultTheme.enhanceApp(ctx)
+    //   // ctx.app.component('VueClickAwayExample', VueClickAwayExample)
   }
 }

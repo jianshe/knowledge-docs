@@ -1,9 +1,9 @@
 {
-  "name": "fa-advanced-interview",
+  "type": "module",
+  "name": "knowledge-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
     "build": "vitepress build docs",
@@ -13,7 +13,6 @@
     "@ant-design/icons-vue": "6.1.0",
     "ant-design-vue": "3.2.15",
     "axios": "1.2.0",
-    "bilibili-live-ws": "6.2.1",
     "bing-chat": "0.2.1",
     "dotenv": "16.0.3",
     "mermaid": "9.1.7",
