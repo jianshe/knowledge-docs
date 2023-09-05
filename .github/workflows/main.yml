@@ -16,3 +16,4 @@ jobs:
           APPLICATION_ID: ${{secrets.APPLICATION_ID}}
           ADMIN_API_KEY: ${{secrets.API_KEY}}
           INDEX_NAME: ${{secrets.INDEX_NAME}}
+          FILE_PATH: ${{secrets.FILE_PATH}}
