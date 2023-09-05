@@ -1,7 +1,7 @@
 export default {
     appId: 'HIJDXP786N',
     apiKey: '72816ddf7cd16f276f7c22dc4231b69a',
-    indexName: 'chocn',
+    indexName: 'albert',
     placeholder: '请输入关键词',
     translations: {
       button: {
