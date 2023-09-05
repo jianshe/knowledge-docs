@@ -1,6 +1,6 @@
 {
     "index_name": "albert", 
-    "start_urls": ["http://www.jianshe.life/"], 
+    "start_urls": ["https://chodocs.cn/"], 
     "rateLimit": 8,
     "maxDepth": 10,
     "selectors": {
