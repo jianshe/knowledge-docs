@@ -82,7 +82,6 @@ export default withMermaid(
       nav: [
         { text: "日语", link: "/japanese/" }
       ],
-
       socialLinks: [
         {
           icon: "github",
@@ -168,6 +167,6 @@ export default withMermaid(
         message: "兴趣与工作相结合",
         copyright: " Copyright © 京ICP备18000331号-1",
       }
-    },
+    }
   })
 );
