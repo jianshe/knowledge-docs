@@ -1,11 +1,11 @@
 export default {
-    appId: '78G7H98MT8',
-    apiKey: 'd17c5eb712f7c56381ce241961d19a53',
+    appId: 'B9AZSTRMVO',
+    apiKey: 'fb90df91c417edcb2b467f4685a59595',
     indexName: 'dev_own',
     placeholder: '请输入关键词',
     translations: {
       button: {
         buttonText: '搜索文档',
-      },
+      }
     }
   }
