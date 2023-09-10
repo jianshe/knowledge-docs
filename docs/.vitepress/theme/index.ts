@@ -10,10 +10,13 @@ import { Card, Avatar } from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 // import 'ant-design-vue/es/card/style/css'
 // import 'ant-design-vue/es/avatar/style/css'
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
 import Member from './Member.vue'
 // import Sound from './Sound.vue'
 import './theme.css'
 import './test'
+let first = true;
 export default {
   ...DefaultTheme,
   NotFound,
@@ -27,6 +30,19 @@ export default {
     app.component('Member', Member)
     app.use(Card)
     app.use(Avatar)
+    // app.use(VuePlyr, {
+    //   plyr: {}
+    // })
+    app.mixin({
+      async mounted() {
+        //你自己的插件地址
+        if (!first) return;
+        first = false;
+        import('vue-plyr').then(module => {
+            app.use(module.default);
+        })
+      },
+    });
     // app.component('Sound',Sound)
     // baidutongji
     // var _hmt = _hmt || [];

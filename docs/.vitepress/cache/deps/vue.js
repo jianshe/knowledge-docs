@@ -144,7 +144,8 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-ID6MPUNE.js";
+} from "./chunk-2OZKDXDN.js";
+import "./chunk-5WWUZCGV.js";
 export {
   BaseTransition,
   Comment,

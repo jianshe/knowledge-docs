@@ -23,7 +23,8 @@
     "sound-play": "1.1.0",
     "vitepress": "1.0.0-alpha.50",
     "vitepress-plugin-mermaid": "2.0.8",
-    "vue": "3.2.41"
+    "vue": "3.2.41",
+    "vue-plyr": "^7.0.0"
   },
   "keywords": [],
   "author": "",
