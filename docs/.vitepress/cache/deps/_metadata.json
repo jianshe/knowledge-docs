@@ -1,0 +1,41 @@
+{
+  "hash": "d3b8c517",
+  "browserHash": "41ba8b89",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.2.41/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "1a9e3e94",
+      "needsInterop": false
+    },
+    "ant-design-vue": {
+      "src": "../../../../node_modules/.pnpm/ant-design-vue@3.2.15_vue@3.2.41/node_modules/ant-design-vue/es/index.js",
+      "file": "ant-design-vue.js",
+      "fileHash": "0b943329",
+      "needsInterop": false
+    },
+    "vue-plyr": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue-plyr@7.0.0/node_modules/vue-plyr/dist/vue-plyr.esm.js",
+      "file": "vue-plyr.js",
+      "fileHash": "737b3f04",
+      "needsInterop": false
+    },
+    "@ant-design/icons-vue": {
+      "src": "../../../../node_modules/.pnpm/@ant-design+icons-vue@6.1.0_vue@3.2.41/node_modules/@ant-design/icons-vue/es/index.js",
+      "file": "@ant-design_icons-vue.js",
+      "fileHash": "2d570012",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-P7TSBRAY": {
+      "file": "chunk-P7TSBRAY.js"
+    },
+    "chunk-2OZKDXDN": {
+      "file": "chunk-2OZKDXDN.js"
+    },
+    "chunk-5WWUZCGV": {
+      "file": "chunk-5WWUZCGV.js"
+    }
+  }
+}

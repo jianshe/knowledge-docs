@@ -6,6 +6,6 @@ export default {
     translations: {
       button: {
         buttonText: '搜索文档',
-      },
+      }
     }
   }

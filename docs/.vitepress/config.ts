@@ -76,13 +76,16 @@ export default withMermaid(
         "script",
         { src: "https://hm.baidu.com/hm.js?ccf55dfd2764cf3ebf43d6b3c9da9b20" },
       ],
+      // [
+      //   "script",
+      //   { src: "https://unpkg.com/vue-plyr@7.0.0/dist/vue-plyr.min.js" },
+      // ]
     ],
     themeConfig: {
       logo: "https://cdn.jsdelivr.net/gh/jianshe/knowledgeAssets@v1.0.1/assets/albert.png",
       nav: [
         { text: "日语", link: "/japanese/" }
       ],
-
       socialLinks: [
         {
           icon: "github",
@@ -100,6 +103,7 @@ export default withMermaid(
           // md.use(taskLists)
         },
       },
+   
       algolia,
       sidebar: {
         "/japanese": [
@@ -168,6 +172,6 @@ export default withMermaid(
         message: "兴趣与工作相结合",
         copyright: " Copyright © 京ICP备18000331号-1",
       }
-    },
+    }
   })
 );
