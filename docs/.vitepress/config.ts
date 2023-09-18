@@ -161,6 +161,10 @@ defineConfigWithTheme<ThemeConfig>({
                 text: "京劇と歌舞伎",
                 items: getDirctSidebar("japanese/きょうげきとかぶき"),
               },
+              {
+                text: "年末",
+                items: getDirctSidebar("japanese/ぼうねんかい")
+              }
             ],
           },
         ],
