@@ -4,10 +4,9 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import algolia from './algolia'
+import algolia from "./algolia";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 
 function getDirctSidebar(pathname: string) {
   const p = path.resolve(__dirname, "../", pathname);
@@ -51,11 +50,11 @@ const projectSidebar = {
 };
 // export default withMermaid(defineConfig({
 export default withMermaid(
-  defineConfigWithTheme<ThemeConfig>({
+defineConfigWithTheme<ThemeConfig>({
     title: "遇你前端进阶指南",
     description: "遇你前端进阶指南|Vue3|React|Vite|Cli|项目实战",
     locales: {
-      root: { label: '简体中文', lang: 'zh-CN' },
+      root: { label: "简体中文", lang: "" },
     },
     head: [
       [
@@ -85,9 +84,7 @@ export default withMermaid(
     ],
     themeConfig: {
       logo: "https://cdn.jsdelivr.net/gh/jianshe/knowledgeAssets@v1.0.1/assets/albert.png",
-      nav: [
-        { text: "日语", link: "/japanese/" }
-      ],
+      nav: [{ text: "日语", link: "/japanese/" }],
       socialLinks: [
         {
           icon: "github",
@@ -162,9 +159,8 @@ export default withMermaid(
               },
               {
                 text: "京劇と歌舞伎",
-                items: getDirctSidebar("japanese/きょうげきとかぶき")
-              }
-              
+                items: getDirctSidebar("japanese/きょうげきとかぶき"),
+              },
             ],
           },
         ],
@@ -172,7 +168,7 @@ export default withMermaid(
       footer: {
         message: "兴趣与工作相结合",
         copyright: " Copyright © 京ICP备18000331号-1",
-      }
-    }
+      },
+    },
   })
 );
