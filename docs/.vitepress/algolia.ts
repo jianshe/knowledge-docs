@@ -1,7 +1,7 @@
 export default {
-    appId: 'HIJDXP786N',
-    apiKey: '72816ddf7cd16f276f7c22dc4231b69a',
-    indexName: 'albert',
+    appId: 'CQQA19BY2I',
+    apiKey: 'ef106f40e763ca475ed31f5cc7fea912',
+    indexName: 'dev_japanese',
     placeholder: '请输入关键词',
     translations: {
       button: {

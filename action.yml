@@ -1,5 +1,5 @@
 name: 'Algolia Upload Records'
-description: 'Uploadquery data records to Algolia'
+description: 'Upload query data records to Algolia'
 author: 1165470968@qq.com
 branding:
   icon: 'upload-cloud'
