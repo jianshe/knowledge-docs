@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\zhangjianshe\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\zhangjianshe\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Go\bin;C:\Users\zhangjianshe\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Tencent\微信web开发者工具\dll;C:\Program Files\JSONBuddy;C:\Users\zhangjianshe\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\zhangjianshe\AppData\Local\Programs\Python\Python311;C:\Users\zhangjianshe\AppData\Local\Microsoft\WindowsApps;C:\Users\zhangjianshe\go\bin;C:\Users\zhangjianshe\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\zhangjianshe\AppData\Local\Programs\Rancher Desktop\resources\resources\win32\bin;C:\Users\zhangjianshe\AppData\Local\Programs\Rancher Desktop\resources\resources\linux\bin;C:\Users\zhangjianshe\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/@ant-design%2ficons-vue: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:10798
+      at ClientRequest.onError (C:\Users\zhangjianshe\AppData\Roaming\nvm\v16.15.1\node_modules\yarn\lib\cli.js:152376:17)
+      at Object.onceWrapper (node:events:642:26)
+      at ClientRequest.emit (node:events:527:28)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "type": "module",
+    "name": "knowledge-docs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
+      "build": "vitepress build docs",
+      "serve": "vitepress serve docs"
+    },
+    "dependencies": {
+      "@ant-design/icons-vue": "6.1.0",
+      "algoliasearch": "^4.9.3",
+      "ant-design-vue": "3.2.15",
+      "axios": "1.2.0",
+      "bing-chat": "0.2.1",
+      "dotenv": "16.0.3",
+      "mermaid": "9.1.7",
+      "node-fetch": "3.3.0",
+      "pinyin": "3.0.0-alpha.4",
+      "sass": "^1.63.6",
+      "sound-play": "1.1.0",
+      "vitepress": "1.0.0-alpha.50",
+      "vitepress-plugin-mermaid": "2.0.8",
+      "vue": "3.2.41",
+      "vue-plyr": "^7.0.0"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
