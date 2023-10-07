@@ -78,8 +78,9 @@
 }
 .vp-doc p{
   margin:6px 0;
-  line-height:26px;
-  font-size:18px;
+  font-size: 16px;
+  line-height: 1.5715;
+  color: #494f57;
 }
 h4{
   font-size:24px;

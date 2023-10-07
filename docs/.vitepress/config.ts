@@ -13,11 +13,11 @@ function getDirctSidebar(pathname: string) {
   if (!fs.existsSync(p)) return [];
   const dirct = fs
     .readdirSync(p)
-    .filter((v) => v.endsWith(".md"))
+  .filter((v) => v.endsWith(".md"))
     .sort((a, b) => {
-      if (a === "index.md") return 1;
-      if (a[0] !== "2") return 1;
-      return a > b ? -1 : 1;
+    if (a === "index.md") return 1;
+  /**if (a[0] !== "2") return 1;**/
+      return a > b ? 1 : -1;
     });
   return dirct.map((dir) => {
     const file = fs.readFileSync(path.resolve(p, dir)).toString();
@@ -50,7 +50,7 @@ const projectSidebar = {
 };
 // export default withMermaid(defineConfig({
 export default withMermaid(
-defineConfigWithTheme<ThemeConfig>({
+  defineConfigWithTheme<ThemeConfig>({
     title: "遇你前端进阶指南",
     description: "遇你前端进阶指南|Vue3|React|Vite|Cli|项目实战",
     locales: {
@@ -77,26 +77,24 @@ defineConfigWithTheme<ThemeConfig>({
         "script",
         { src: "https://hm.baidu.com/hm.js?ccf55dfd2764cf3ebf43d6b3c9da9b20" },
       ],
-      // [
-      //   "script",
-      //   { src: "https://unpkg.com/vue-plyr@7.0.0/dist/vue-plyr.min.js" },
-      // ]
     ],
     themeConfig: {
       logo: "https://cdn.jsdelivr.net/gh/jianshe/knowledgeAssets@v1.0.1/assets/albert.png",
-      nav: [{ text: "日语", link: "/japanese/" }],
+      nav: [
+        { text: "面试课", link: "/interview/" },
+        { text: "🔥玩转Vue3", link: "/vue/" },
+        { text: "前端学算法", link: "/algorithm/" },
+        { text: "源码漫游记", link: "/source/" },
+        { text: "玩转后端", link: "/backend/" },
+{ text: "日语", link: "/japanese/" },
+      ],
       socialLinks: [
         {
           icon: "github",
-          link: "https://github.com/shengxinjing/fe-advanced-interview",
+          link: "https://github.com/jianshe/knowledge-docs.git",
         },
       ],
       lastUpdatedText: "更新时间",
-      editLink: {
-        pattern:
-          "https://github.com/shengxinjing/fe-advanced-interview/tree/main/docs/:path",
-        text: "编辑页面",
-      },
       markdown: {
         config(md) {
           // md.use(taskLists)
@@ -104,6 +102,100 @@ defineConfigWithTheme<ThemeConfig>({
       },
       algolia,
       sidebar: {
+        "/interview": [
+          {
+            text: "javascript",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/javascript"),
+          },
+          {
+            text: "css3",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/css3"),
+          },
+          {
+            text: "vue",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/vue"),
+          },
+          {
+            text: "vue-router",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/vueRouter"),
+          },
+          {
+            text: "element",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/element"),
+          },
+        ],
+        "/vue": [
+          {
+            text: "玩转Vue3",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("vue"),
+          },
+        ],
+        "/algorithm": [
+          {
+            text: "单向链表",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/chainTable"),
+          },
+          {
+            text: "队列",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/queue"),
+          },
+          {
+            text: "递归与栈",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/stack"),
+          },
+          {
+            text: "二叉树",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/binaryTree"),
+          },
+        ],
+        "/source": [
+          {
+            text: "vue3",
+            collapsible: true,
+            collapsed: true,
+          items: getDirctSidebar("source/vue3"),
+          },
+        ],
+        "/backend": [
+          {
+            text: "linux",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("backend/linux"),
+          },
+          {
+            text: "node",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("backend/node"),
+          },
+          {
+            text: "server",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("backend/server"),
+          },
+        ],
         "/japanese": [
           {
             text: "发音篇",
@@ -163,9 +255,17 @@ defineConfigWithTheme<ThemeConfig>({
               },
               {
                 text: "年末",
-                items: getDirctSidebar("japanese/ぼうねんかい")
-              }
+                items: getDirctSidebar("japanese/ぼうねんかい"),
+              },
             ],
+          },
+        ],
+        "/blog": [
+          {
+            text: "文章",
+            collapsible: true,
+            collapsed: false,
+            items: [{ text: "", items: getDirctSidebar("blog") }],
           },
         ],
       },

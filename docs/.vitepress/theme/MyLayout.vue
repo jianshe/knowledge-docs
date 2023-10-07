@@ -1,95 +1,100 @@
 <script setup lang="ts">
-import { ref ,onMounted, watch, reactive} from 'vue'
-import { useData, useRoute,useRouter } from 'vitepress';
-import DefaultTheme from 'vitepress/theme'
-const data = useData()
-const route = useRoute()
-const router = useRouter()
-const { Layout } = DefaultTheme
-const { theme } = data
+import { ref, onMounted, watch, reactive } from "vue";
+import { useData, useRoute, useRouter } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+const data = useData();
+const route = useRoute();
+const router = useRouter();
+const { Layout } = DefaultTheme;
+const { theme } = data;
 
-const isShowWechat = ref(false)
+const isShowWechat = ref(false);
 
 const course = reactive({
-  show:false,
-  link:''
-})
-if (typeof window !== 'undefined') {
-  watch(() => router.route.data.relativePath, (path) => {
-    if(path.startsWith('react/')){
-      course.show = true
-      course.link = "https://student-api.iyincaishijiao.com/t/BNHNoPs/"
-    }else if(path.startsWith('vue/')){
-      course.show = true
-      // new
-      // course.link = "https://student-api.iyincaishijiao.com/t/AWn4BBC/"
-      //old
-      course.link = "https://student-api.iyincaishijiao.com/t/SH2Hjqw/"
-    }else if(path.startsWith('source/')){
-      course.show = true
-      course.link = "https://student-api.iyincaishijiao.com/t/SH2WsSu/"
-    }else if(path.startsWith('algorithm/')){
-      course.show = true
-      course.link = "https://student-api.iyincaishijiao.com/t/SmMYKcT/"
-    }else if(path.startsWith('interview/')){
-      course.show = true
-      course.link = "https://student-api.iyincaishijiao.com/t/SmM1uQC/"
-    }
-    else{
-      course.show = false
-    }
-  }, { immediate: true });
+  show: false,
+  link: "",
+});
+if (typeof window !== "undefined") {
+  watch(
+    () => router.route.data.relativePath,
+    (path) => {
+      if (path.startsWith("react/")) {
+        course.show = true;
+        course.link = "https://student-api.iyincaishijiao.com/t/BNHNoPs/";
+      } else if (path.startsWith("vue/")) {
+        course.show = true;
+        // new
+        // course.link = "https://student-api.iyincaishijiao.com/t/AWn4BBC/"
+        //old
+        course.link = "https://student-api.iyincaishijiao.com/t/SH2Hjqw/";
+      } else if (path.startsWith("source/")) {
+        course.show = true;
+        course.link = "https://student-api.iyincaishijiao.com/t/SH2WsSu/";
+      } else if (path.startsWith("algorithm/")) {
+        course.show = true;
+        course.link = "https://student-api.iyincaishijiao.com/t/SmMYKcT/";
+      } else if (path.startsWith("interview/")) {
+        course.show = true;
+        course.link = "https://student-api.iyincaishijiao.com/t/SmM1uQC/";
+      } else {
+        course.show = false;
+      }
+    },
+    { immediate: true }
+  );
 }
-onMounted(()=>{
-  const path = location.pathname
-  // router 
-  let isShowSide = location.search.indexOf('hide') == -1 
-  isShowWechat.value = isShowSide && location.host === 'shengxinjing.cn'
+onMounted(() => {
+  const path = location.pathname;
+  // router
+  let isShowSide = location.search.indexOf("hide") == -1;
+  isShowWechat.value = isShowSide && location.host === "shengxinjing.cn";
 
-  if(isShowSide){
-    let fixwindow = document.querySelector('.gpt-fix-window')
-    if(fixwindow){
-      fixwindow.style.display = 'none'
+  if (isShowSide) {
+    let fixwindow = document.querySelector(".gpt-fix-window");
+    if (fixwindow) {
+      fixwindow.style.display = "none";
     }
   }
   // renderKanban()
-
-})
-function renderKanban(){
-  if(typeof loadlive2d!=='undefined'){
-    if(location.pathname.indexOf('chatgpt.html') > -1){
+});
+function renderKanban() {
+  if (typeof loadlive2d !== "undefined") {
+    if (location.pathname.indexOf("chatgpt.html") > -1) {
       // loadlive2d("live2d", "/miku/model.json");
-      loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json")
+      loadlive2d(
+        "live2d",
+        "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json"
+      );
     }
-  }else{
-    setTimeout(()=>renderKanban(),200)
+  } else {
+    setTimeout(() => renderKanban(), 200);
   }
 }
 
 // setTimeout(()=>{
-  // loadlive2d("live2d", "/mai/model.json");
-  // if(location.pathname.indexOf('chatgpt.html') > -1){
-    // loadlive2d("live2d", "/miku/model.json");
-  // }
-  // loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json")
-  // https://cdn.jsdelivr.net/gh/shengxinjing/static/work.png
+// loadlive2d("live2d", "/mai/model.json");
+// if(location.pathname.indexOf('chatgpt.html') > -1){
+// loadlive2d("live2d", "/miku/model.json");
+// }
+// loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json")
+// https://cdn.jsdelivr.net/gh/shengxinjing/static/work.png
 // },2000)
 </script>
 
 <template>
   <Layout>
-    <template #doc-before><slot name="doc-before" />
-      <div class="action" v-if="course.show">
+    <template #doc-before
+      ><slot name="doc-before" />
+      <!-- <div class="action" v-if="course.show">
         <a class="course-btn" :href="course.link" target="_blank">课程链接</a>
-      </div>
-
+      </div> -->
     </template>
 
     <template #aside-outline-after>
       <div v-if="isShowWechat" class="about-me">
         <p class="item">扫码联系 & 客服</p>
         <p class="item">学习编程 & 自由职业</p>
-        <img :src="theme.me.wechat" alt="">
+        <img :src="theme.me.wechat" alt="" />
 
         <!-- <p class="item">
           <a target="_blank" href="https://appx496fyc38425.h5.xiaoeknow.com/p/decorate/homepage">我的课程首页</a>
@@ -107,7 +112,7 @@ function renderKanban(){
   font-size: 14px;
   /* text-align: center; */
 }
-.about-me p{
+.about-me p {
   margin: 5px 0;
 }
 .about-me a {
@@ -119,7 +124,7 @@ function renderKanban(){
 
 .about-me img {
   width: 150px;
-  margin-left:-8px;
+  margin-left: -8px;
 }
 </style>
 <!-- 
