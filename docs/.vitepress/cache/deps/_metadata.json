@@ -1,29 +1,41 @@
 {
-  "hash": "31bbf4fd",
-  "browserHash": "26ffd2f6",
+  "hash": "602b681f",
+  "browserHash": "64375ef6",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue@3.2.41/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "dda16d54",
+      "fileHash": "ae865305",
       "needsInterop": false
     },
     "ant-design-vue": {
       "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+ant-design-vue@3.2.15_vue@3.2.41/node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "1ea59007",
+      "fileHash": "f4fdf570",
       "needsInterop": false
     },
     "vue-plyr": {
       "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+vue-plyr@7.0.0/node_modules/vue-plyr/dist/vue-plyr.esm.js",
       "file": "vue-plyr.js",
-      "fileHash": "4d20ee5f",
+      "fileHash": "7e718853",
+      "needsInterop": false
+    },
+    "medium-zoom": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+medium-zoom@1.0.8/node_modules/medium-zoom/dist/medium-zoom.esm.js",
+      "file": "medium-zoom.js",
+      "fileHash": "45e73329",
       "needsInterop": false
     },
     "@ant-design/icons-vue": {
       "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+@ant-design+icons-vue@6.1.0_vue@3.2.41/node_modules/@ant-design/icons-vue/es/index.js",
       "file": "@ant-design_icons-vue.js",
-      "fileHash": "aaa1f21f",
+      "fileHash": "256642ae",
+      "needsInterop": false
+    },
+    "viewerjs": {
+      "src": "../../../../node_modules/.pnpm/registry.npmmirror.com+viewerjs@1.11.2/node_modules/viewerjs/dist/viewer.esm.js",
+      "file": "viewerjs.js",
+      "fileHash": "9edce996",
       "needsInterop": false
     }
   },

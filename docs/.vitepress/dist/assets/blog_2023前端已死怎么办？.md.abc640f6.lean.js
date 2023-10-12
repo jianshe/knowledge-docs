@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,a as o}from"./app.16764a97.js";const m=JSON.parse('{"title":"2023前端已死怎么办？","description":"","frontmatter":{},"headers":[],"relativePath":"blog/2023前端已死怎么办？.md"}'),l={name:"blog/2023前端已死怎么办？.md"},a=o("",26),p=[a];function i(s,n,c,_,b,h){return r(),t("div",null,p)}const u=e(l,[["render",i]]);export{m as __pageData,u as default};

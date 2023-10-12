@@ -12,7 +12,11 @@ import 'ant-design-vue/dist/antd.css';
 // import 'ant-design-vue/es/avatar/style/css'
 import VuePlyr from 'vue-plyr'
 import 'vue-plyr/dist/vue-plyr.css'
-import Member from './Member.vue'
+import VueViewer from './utils/v-viewer-ssr'
+import 'viewerjs/dist/viewer.css'
+
+import ZoomImg from './ZoomImg.vue'
+import ViewerZoom from  './ViewerZoom.vue'
 // import Sound from './Sound.vue'
 import './theme.css'
 import './test'
@@ -27,9 +31,12 @@ export default {
     app.component('JpWordList', JpWordList)
     app.component('Word', Word)
     app.component('WordList', WordList)
-    app.component('Member', Member)
+    app.component('ZoomImg', ZoomImg)
+    app.component('ViewerZoom',ViewerZoom)
     app.use(Card)
     app.use(Avatar)
+    app.use(VueViewer)
+
     // app.use(VuePlyr, {
     //   plyr: {}
     // })

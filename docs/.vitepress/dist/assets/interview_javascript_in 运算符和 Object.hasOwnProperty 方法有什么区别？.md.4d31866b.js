@@ -1,0 +1,15 @@
+import{_ as a,c as n,o as s,a as e}from"./app.16764a97.js";const y=JSON.parse('{"title":"in 运算符和 Object.hasOwnProperty 方法有什么区别？","description":"","frontmatter":{},"headers":[{"level":2,"title":"hasOwnProperty方法","slug":"hasownproperty方法","link":"#hasownproperty方法","children":[]},{"level":2,"title":"in运算符","slug":"in运算符","link":"#in运算符","children":[]}],"relativePath":"interview/javascript/in 运算符和 Object.hasOwnProperty 方法有什么区别？.md"}'),p={name:"interview/javascript/in 运算符和 Object.hasOwnProperty 方法有什么区别？.md"},o=e(`<h1 id="in-运算符和-object-hasownproperty-方法有什么区别" tabindex="-1">in 运算符和 Object.hasOwnProperty 方法有什么区别？ <a class="header-anchor" href="#in-运算符和-object-hasownproperty-方法有什么区别" aria-hidden="true">#</a></h1><h2 id="hasownproperty方法" tabindex="-1">hasOwnProperty方法 <a class="header-anchor" href="#hasownproperty方法" aria-hidden="true">#</a></h2><p>hasOwnProperty()方法返回值是一个布尔值，指示对象自身属性中是否具有指定的属性，因此这个方法会忽略掉那些从原型链上继承到的属性。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#babed8;">  Object.prototype.phone= &#39;15345025546&#39;;</span></span>
+<span class="line"><span style="color:#babed8;">  let obj = {</span></span>
+<span class="line"><span style="color:#babed8;">    name: &#39;前端小智&#39;,</span></span>
+<span class="line"><span style="color:#babed8;">    age: &#39;28&#39;</span></span>
+<span class="line"><span style="color:#babed8;">  }</span></span>
+<span class="line"><span style="color:#babed8;">  console.log(obj.hasOwnProperty(&#39;phone&#39;)) // false</span></span>
+<span class="line"><span style="color:#babed8;">  console.log(obj.hasOwnProperty(&#39;name&#39;)) // true</span></span>
+<span class="line"><span style="color:#babed8;"></span></span></code></pre></div><h2 id="in运算符" tabindex="-1">in运算符 <a class="header-anchor" href="#in运算符" aria-hidden="true">#</a></h2><p>in运算符返回值也是一个布尔值，如果指定的属性在指定的对象或其原型链上，则in运算符返回true。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight" tabindex="0"><code><span class="line"><span style="color:#babed8;">Object.prototype.phone= &#39;15345025546&#39;;</span></span>
+<span class="line"><span style="color:#babed8;">  let obj = {</span></span>
+<span class="line"><span style="color:#babed8;">    name: &#39;前端小智&#39;,</span></span>
+<span class="line"><span style="color:#babed8;">    age: &#39;28&#39;</span></span>
+<span class="line"><span style="color:#babed8;">  }</span></span>
+<span class="line"><span style="color:#babed8;">  console.log(&#39;phone&#39; in obj) // true</span></span>
+<span class="line"><span style="color:#babed8;">  console.log(&#39;name&#39; in obj) // true</span></span>
+<span class="line"><span style="color:#babed8;"></span></span></code></pre></div>`,7),l=[o];function t(r,c,i,d,b,h){return s(),n("div",null,l)}const u=a(p,[["render",t]]);export{y as __pageData,u as default};

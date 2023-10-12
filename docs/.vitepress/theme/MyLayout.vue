@@ -47,7 +47,7 @@ onMounted(() => {
   const path = location.pathname;
   // router
   let isShowSide = location.search.indexOf("hide") == -1;
-  isShowWechat.value = isShowSide && location.host === "shengxinjing.cn";
+  isShowWechat.value = isShowSide && location.host === "jianshe.life";
 
   if (isShowSide) {
     let fixwindow = document.querySelector(".gpt-fix-window");
@@ -63,7 +63,6 @@ function renderKanban() {
       // loadlive2d("live2d", "/miku/model.json");
       loadlive2d(
         "live2d",
-        "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json"
       );
     }
   } else {
@@ -71,14 +70,6 @@ function renderKanban() {
   }
 }
 
-// setTimeout(()=>{
-// loadlive2d("live2d", "/mai/model.json");
-// if(location.pathname.indexOf('chatgpt.html') > -1){
-// loadlive2d("live2d", "/miku/model.json");
-// }
-// loadlive2d("live2d", "https://cdn.jsdelivr.net/gh/shengxinjing/static/miku/model.json")
-// https://cdn.jsdelivr.net/gh/shengxinjing/static/work.png
-// },2000)
 </script>
 
 <template>

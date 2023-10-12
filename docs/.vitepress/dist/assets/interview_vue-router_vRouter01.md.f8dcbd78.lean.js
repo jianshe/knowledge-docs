@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.16764a97.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"interview/vue-router/vRouter01.md"}'),o={name:"interview/vue-router/vRouter01.md"};function a(n,s,c,i,p,u){return r(),t("div")}const v=e(o,[["render",a]]);export{d as __pageData,v as default};

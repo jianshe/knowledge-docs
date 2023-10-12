@@ -84,7 +84,6 @@ Outside of programming, I enjoy traveling, reading, and computer games, If you h
 
 | 纪录片| 字幕(中英对照)|
 | ---------------- | :---: |
-| [React纪录片](https://www.bilibili.com/video/BV188411T7ty/) | [字幕](/subtitle/react.html)|
 
 | 单词 （拼错 or 不好发音）     | 翻译  | 
 | ---------------- | :---: |

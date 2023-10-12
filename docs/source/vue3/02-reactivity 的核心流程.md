@@ -1,6 +1,6 @@
 # 02-reactivity 的核心流程
 
-![](../images/vue3/reactivity.png)
+<ViewerZoom src="../images/vue3/reactivity.png" />
 
 ## reactive 的使用
 

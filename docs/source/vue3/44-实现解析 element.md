@@ -1,7 +1,7 @@
 # 44-实现解析 element
 
 ## 核心功能
-1. 解析element(<div>hello</div>)。
+1. 解析element("\<div\>hello\</div\>")。
 
 ## 测试案例
 ```javascript

@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.16764a97.js";const C=JSON.parse('{"title":"linux常用命令","description":"","frontmatter":{},"headers":[],"relativePath":"backend/linux/linux常用命令.md"}'),p={name:"backend/linux/linux常用命令.md"},o=l("",27),t=[o];function e(c,r,B,y,i,D){return n(),a("div",null,t)}const d=s(p,[["render",e]]);export{C as __pageData,d as default};

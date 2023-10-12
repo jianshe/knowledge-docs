@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as e}from"./app.16764a97.js";const h=JSON.parse('{"title":"CentOS安装NodeJS","description":"","frontmatter":{},"headers":[],"relativePath":"backend/server/CentOS安装NodeJS.md"}'),l={name:"backend/server/CentOS安装NodeJS.md"},p=e("",18),o=[p];function t(c,r,i,d,b,y){return n(),a("div",null,o)}const g=s(l,[["render",t]]);export{h as __pageData,g as default};
