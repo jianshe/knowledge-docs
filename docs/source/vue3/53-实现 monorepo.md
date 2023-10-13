@@ -50,7 +50,7 @@
 1. reactivity -> shared
 2. runtime-coure 依赖 reactivity 和 shared。
 3. runtime-dom 依赖 runtime-core。
-4. compiler-core 依赖 shard。
+4. compiler-core 依赖 shared
 
 ### 2. 调整 build 逻辑。
 

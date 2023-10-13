@@ -13,10 +13,10 @@ function getDirctSidebar(pathname: string) {
   if (!fs.existsSync(p)) return [];
   const dirct = fs
     .readdirSync(p)
-  .filter((v) => v.endsWith(".md"))
+    .filter((v) => v.endsWith(".md"))
     .sort((a, b) => {
-    if (a === "index.md") return 1;
-  /**if (a[0] !== "2") return 1;**/
+      if (a === "index.md") return 1;
+      /**if (a[0] !== "2") return 1;**/
       return a > b ? 1 : -1;
     });
   return dirct.map((dir) => {
@@ -84,9 +84,10 @@ export default withMermaid(
         { text: "面试课", link: "/interview/" },
         { text: "🔥玩转Vue3", link: "/vue/" },
         { text: "前端学算法", link: "/algorithm/" },
+        {text: "微服务", link:"/microservices/"},
         { text: "源码漫游记", link: "/source/" },
         { text: "玩转后端", link: "/backend/" },
-{ text: "日语", link: "/japanese/" },
+        { text: "日语", link: "/japanese/" },
       ],
       socialLinks: [
         {
@@ -167,13 +168,33 @@ export default withMermaid(
             collapsed: true,
             items: getDirctSidebar("algorithm/binaryTree"),
           },
+          {
+            text: "堆与优先队列",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/heap"),
+          },
+        ],
+        "/microservices": [
+          {
+            text: "项目发布",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("microservices/publish"),
+          },
+          {
+            text: "乾坤",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("qiankun"),
+          },
         ],
         "/source": [
           {
             text: "vue3",
             collapsible: true,
             collapsed: true,
-          items: getDirctSidebar("source/vue3"),
+            items: getDirctSidebar("source/vue3"),
           },
         ],
         "/backend": [
