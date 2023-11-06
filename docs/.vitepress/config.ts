@@ -84,7 +84,7 @@ export default withMermaid(
         { text: "面试课", link: "/interview/" },
         { text: "🔥玩转Vue3", link: "/vue/" },
         { text: "前端学算法", link: "/algorithm/" },
-        {text: "微服务", link:"/microservices/"},
+        { text: "微服务", link: "/microservices/" },
         { text: "源码漫游记", link: "/source/" },
         { text: "玩转后端", link: "/backend/" },
         { text: "日语", link: "/japanese/" },
@@ -110,11 +110,24 @@ export default withMermaid(
             collapsed: true,
             items: getDirctSidebar("interview/javascript"),
           },
+
+          {
+            text: "es6",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/es6"),
+          },
           {
             text: "css3",
             collapsible: true,
             collapsed: true,
             items: getDirctSidebar("interview/css3"),
+          },
+          {
+            text: "typescript",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/typescript"),
           },
           {
             text: "vue",
@@ -123,10 +136,22 @@ export default withMermaid(
             items: getDirctSidebar("interview/vue"),
           },
           {
-            text: "vue-router",
+            text: "engineering",
             collapsible: true,
             collapsed: true,
-            items: getDirctSidebar("interview/vueRouter"),
+            items: getDirctSidebar("interview/engineering"),
+          },
+          {
+            text: "http",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/http"),
+          },
+          {
+            text: "code",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("interview/code"),
           },
           {
             text: "element",
@@ -174,6 +199,12 @@ export default withMermaid(
             collapsed: true,
             items: getDirctSidebar("algorithm/heap"),
           },
+          {
+            text: "快排及相关优化",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("algorithm/quicksort"),
+          },
         ],
         "/microservices": [
           {
@@ -186,7 +217,7 @@ export default withMermaid(
             text: "乾坤",
             collapsible: true,
             collapsed: true,
-            items: getDirctSidebar("qiankun"),
+            items: getDirctSidebar("microservices/qiankun"),
           },
         ],
         "/source": [
