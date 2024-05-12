@@ -3,7 +3,7 @@
 ## 核心代码如下
 
 ```javascript
-function ajax(method, url, date) {
+function ajax(method, url, data) {
   var xhr = new XMLHttpRequest();
 
   return new Promise(function (resolve, reject) {

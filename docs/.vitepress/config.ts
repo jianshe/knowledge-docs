@@ -84,6 +84,7 @@ export default withMermaid(
         { text: "面试课", link: "/interview/" },
         { text: "🔥玩转Vue3", link: "/vue/" },
         { text: "前端学算法", link: "/algorithm/" },
+        { text: "云构建", link: "/cloud-build/" },
         { text: "微服务", link: "/microservices/" },
         { text: "源码漫游记", link: "/source/" },
         { text: "玩转后端", link: "/backend/" },
@@ -159,6 +160,39 @@ export default withMermaid(
             collapsed: true,
             items: getDirctSidebar("interview/element"),
           },
+        ],
+        "/cloud-build": [
+          {
+            text: "help",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("cloud-build/help"),
+          },
+
+          {
+            text: "info",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("cloud-build/info"),
+          },
+          {
+            text: "install-set",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("cloud-build/install-set"),
+          },
+          {
+            text: "job-user",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("cloud-build/job-user"),
+          },
+          {
+            text: "sdk",
+            collapsible: true,
+            collapsed: true,
+            items: getDirctSidebar("cloud-build/sdk"),
+          }
         ],
         "/vue": [
           {
