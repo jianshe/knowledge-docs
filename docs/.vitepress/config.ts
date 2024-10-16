@@ -345,6 +345,18 @@ export default withMermaid(
               },
             ],
           },
+          {
+            text: "进阶篇",
+            collapsible: true,
+            collapsed: true,
+            items: [
+              {
+                text: "春節",
+                items: getDirctSidebar("japanese/しゅんせつ"),
+              }
+            ],
+          },
+
         ],
         "/blog": [
           {
