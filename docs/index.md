@@ -19,9 +19,9 @@ hero:
     - theme: brand
       text: 前端面试
       link: /interview/
-    - theme: alt
-      text: 玩转Vue3
-      link: /vue/
+    # - theme: alt
+    #   text: 玩转Vue3
+    #   link: /vue/
     # - theme: alt
     #   text: 玩转React18
     #   link: /react/

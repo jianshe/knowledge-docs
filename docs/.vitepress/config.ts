@@ -82,9 +82,8 @@ export default withMermaid(
       logo: "https://cdn.jsdelivr.net/gh/jianshe/knowledgeAssets@v1.0.1/assets/albert.png",
       nav: [
         { text: "面试课", link: "/interview/" },
-        { text: "🔥玩转Vue3", link: "/vue/" },
         { text: "前端学算法", link: "/algorithm/" },
-        { text: "云构建", link: "/cloud-build/" },
+        // { text: "云构建", link: "/cloud-build/" },
         { text: "微服务", link: "/microservices/" },
         { text: "源码漫游记", link: "/source/" },
         { text: "玩转后端", link: "/backend/" },
