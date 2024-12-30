@@ -356,6 +356,10 @@ export default withMermaid(
               {
                 text: "演唱会",
                 items: getDirctSidebar("japanese/コンサート"),
+              },
+              {
+                text: "病気",
+                items: getDirctSidebar("japanese/びょうき"),
               }
             ],
           },
