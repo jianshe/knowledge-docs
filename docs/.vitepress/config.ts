@@ -360,6 +360,10 @@ export default withMermaid(
               {
                 text: "病気",
                 items: getDirctSidebar("japanese/びょうき"),
+              },
+              {
+                text:"環境問題",
+                items: getDirctSidebar("japanese/かんきょう"),
               }
             ],
           },
