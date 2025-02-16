@@ -368,6 +368,10 @@ export default withMermaid(
               {
                 text:"遠足",
                 items: getDirctSidebar("japanese/えんそく"),
+              },
+              {
+                text:"宝くじ",
+                items: getDirctSidebar("japanese/たからくじ"),
               }
             ],
           },
