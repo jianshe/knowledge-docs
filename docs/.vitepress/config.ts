@@ -372,6 +372,10 @@ export default withMermaid(
               {
                 text:"宝くじ",
                 items: getDirctSidebar("japanese/たからくじ"),
+              },
+              {
+                text:"弁論大会",
+                items: getDirctSidebar("japanese/べんろんたいかい"),
               }
             ],
           },
